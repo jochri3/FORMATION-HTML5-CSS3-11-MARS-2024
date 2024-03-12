@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/pages/about.html">About</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+      <li><a href="/pages/horaire.html">Horaire</a></li>
+      <li><a href="/pages/register.html">Register</a></li>
+    </ul>
+    <h1>Creer votre compte</h1>
+    <!-- 
+        - nom
+        - prenom
+        - email
+        - Mot de passe
+        - biographie
+        - pays
+        - status
+     -->
+    <form>
+      <div>
+        <!-- <label for="nom">Nom :</label>
+        <input type="text" id="nom" placeholder="Ex : Christian" /> -->
+        <input type="text" placeholder="Votre nom" aria-label="Votre nom" />
+      </div>
+      <div>
+        <label for="prenom">Prenom :</label>
+        <input type="text" id="prenom" />
+      </div>
+      <div>
+        <label for="email">Email :</label>
+        <input type="email" id="email" />
+      </div>
+      <div>
+        <label for="mot-de-passe">Mot de passe :</label>
+        <input type="password" id="mot-de-passe" />
+      </div>
+      <div>
+        <label for="pays">Pays :</label>
+        <select id="pays">
+          <option>Choisir un pays</option>
+          <option>France</option>
+          <option>Belgique</option>
+          <option>Espagne</option>
+          <option>Italie</option>
+        </select>
+      </div>
+      <div>
+        <label>Statut :</label>
+        <input type="radio" name="status" />Actif
+        <input type="radio" name="status" />Inactif
+      </div>
+      <div>
+        <label for="bio">Biographie :</label>
+        <textarea name="" id="bio"></textarea>
+      </div>
+      <button type="submit">Envoyer</button>
+    </form>
+  </body>
+</html>

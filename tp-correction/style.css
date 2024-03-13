@@ -1,0 +1,46 @@
+:root {
+  --standard-padding: 10px;
+}
+
+body {
+  display: grid;
+  gap: 10px;
+}
+
+.bloc-haut {
+  background-color: #97fa96;
+  padding: var(--standard-padding);
+}
+
+.bloc-jaune {
+  background-color: #f0e68d;
+  padding: var(--standard-padding);
+}
+
+.bloc-bleu {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 5px;
+}
+
+.gauche,
+.droite {
+  background-color: #6491ec;
+  padding: var(--standard-padding);
+}
+
+.bloc-violet {
+  background-color: #916ed7;
+  padding: var(--standard-padding);
+}
+
+.bloc-orange {
+  background-color: #ffa503;
+  padding: var(--standard-padding);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

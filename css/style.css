@@ -1,0 +1,82 @@
+.container {
+  background-color: indigo;
+  display: grid;
+  gap: 3px;
+}
+
+.item {
+  height: 300px;
+}
+
+/* 
+ xs : extra small - [0,576px]
+*/
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: 1fr;
+    background-color: white;
+  }
+
+  .item {
+    background-color: #913f92;
+  }
+}
+
+/* 
+ sm : small - [577px, 767px]
+*/
+@media screen and (min-width: 577px) {
+  .container {
+    grid-template-columns: 1fr;
+    background-color: white;
+  }
+
+  .item {
+    background-color: #d84242;
+  }
+}
+
+/* 
+ md : medium - [768px,991px]
+*/
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item {
+    background-color: #29bdc1;
+  }
+}
+
+/* 
+ lg : large - [992px,1199px]
+*/
+@media screen and (min-width: 992px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item {
+    background-color: #f46c6c;
+  }
+}
+
+/* 
+ xl : extra-large - [1200px,1399px]
+*/
+@media screen and (min-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .item {
+    background-color: orangered;
+  }
+}
+
+/* 
+ xxl : extra extra large - [1400,n]
+*/
+/* @media screen and (min-width: 1400px) {
+} */

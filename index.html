@@ -3,21 +3,30 @@
   <head>
     <title>Ma premiere page</title>
     <meta charset="utf8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/pages/about.html">About</a></li>
-      <li><a href="/pages/contact.html">Contact</a></li>
-      <li><a href="/pages/horaire.html">Horaire</a></li>
-      <li><a href="/pages/register.html">Register</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/pages/about/">About</a></li>
+        <li><a href="/pages/contact/">Contact</a></li>
+        <li><a href="/pages/horaire/">Horaire</a></li>
+        <li><a href="/pages/register/">Register</a></li>
+      </ul>
+    </nav>
     <h1>Formation Dev Web</h1>
     <p>Durant cette formation, nous allons apprendre:</p>
-    <ul>
+    <ul class="subjects">
       <li>Spring</li>
       <li>Java EE</li>
-      <li>HTML 5</li>
+      <li class="italic-underline">HTML 5</li>
       <li>CSS 3</li>
       <li>SEO</li>
       <li>Angular</li>
@@ -30,7 +39,7 @@
       <li>SEO</li>
       <li>Angular</li>
       <li>Java EE</li>
-      <li>Spring Boot</li>
+      <li class="italic-underline">Spring Boot</li>
     </ol>
     <p>
       Pour plus d'informations, cliquez
@@ -46,9 +55,10 @@
       <li><a href="#spring-boot">Spring Boot</a></li>
     </ul>
     <h2 id="cpp">C++</h2>
-    <p>
-      Le bureau des statistiques du travail des États-Unis estime qu’il y a plus
-      de 1.469.000 développeurs de logiciels dans le pays. Selon les données de
+    <p class="blog" id="blog-1">
+      Le bureau des statistiques du travail des
+      <span class="italic-underline">États-Unis</span> estime qu’il y a plus de
+      1.469.000 développeurs de logiciels dans le pays. Selon les données de
       2021, 35,35 % de ces développeurs utilisent Java, l’un des cinq langages
       de programmation les plus utilisés au monde. Naturellement, apprendre Java
       et devenir un développeur Java est un choix de carrière intelligent pour
@@ -189,7 +199,7 @@
       attendre de votre employeur comme salaire. C’est parti !
     </p>
     <h2 id="javascript">Javascript</h2>
-    <p>
+    <p class="blog">
       Le bureau des statistiques du travail des États-Unis estime qu’il y a plus
       de 1.469.000 développeurs de logiciels dans le pays. Selon les données de
       2021, 35,35 % de ces développeurs utilisent Java, l’un des cinq langages
@@ -392,7 +402,7 @@
       attendre de votre employeur comme salaire. C’est parti !
     </p>
     <h2 id="php">PHP</h2>
-    <p>
+    <p class="blog">
       Le bureau des statistiques du travail des États-Unis estime qu’il y a plus
       de 1.469.000 développeurs de logiciels dans le pays. Selon les données de
       2021, 35,35 % de ces développeurs utilisent Java, l’un des cinq langages
@@ -605,7 +615,7 @@
       attendre de votre employeur comme salaire. C’est parti !
     </p>
     <h2 id="spring-boot">Spring boot</h2>
-    <p>
+    <p class="blog">
       Le bureau des statistiques du travail des États-Unis estime qu’il y a plus
       de 1.469.000 développeurs de logiciels dans le pays. Selon les données de
       2021, 35,35 % de ces développeurs utilisent Java, l’un des cinq langages
